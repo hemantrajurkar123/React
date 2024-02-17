@@ -36,3 +36,15 @@
     transform: rotate(360deg);
   }
 }
+
+
+.student-child-card{
+  border:1px solid black;
+  border-radius:5px;
+  width:30%;
+  margin:10px;
+}
+
+.student-child-card p {
+  margin:0;
+}

@@ -11,7 +11,8 @@ useContext() method
 3. Do it by using useState along with useContext */
 import "./App.css";
 import { createContext, useState } from "react";
-import Child from "./Child";
+// import Child from "./Child";
+import ParentComponent from "./StudentParent";
 
 const UserDataContext = createContext();
 
@@ -36,7 +37,8 @@ function App() {
     <UserDataContext.Provider value={userData}>
       <div>
         <h3>This is the main app</h3>
-        <Child />
+        <ParentComponent />
+        {/* <Child /> */}
       </div>
     </UserDataContext.Provider>
   );
