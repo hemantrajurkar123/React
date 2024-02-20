@@ -13,6 +13,8 @@ import "./App.css";
 import { createContext, useState } from "react";
 // import Child from "./Child";
 import ParentComponent from "./StudentParent";
+import UserIconComponent from "./Components/userIconComponent";
+import UserIconComponentNew from "./Components/userIconComponentNew";
 
 const UserDataContext = createContext();
 
@@ -34,10 +36,14 @@ function App() {
   };
 
   return (
+    
     <UserDataContext.Provider value={userData}>
       <div>
         <h3>This is the main app</h3>
-        <ParentComponent />
+        {/* <ParentComponent /> */}
+        {/* <UserIconComponent /> */}
+        <UserIconComponentNew />
+
         {/* <Child /> */}
       </div>
     </UserDataContext.Provider>
